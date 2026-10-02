@@ -17,5 +17,15 @@
 
   <h1> il titolo è: {{ $title }}</h1>
   <h5>{{ $description }}</h5>
+
+  <ul>
+    @foreach($articles as $article)
+      @if($article['visibile'])
+        <a href=""><li>{{ $article['titolo']}}</li></a>
+        @endif
+    @endforeach
+
+
+  </ul>
 </body>
 </html>
