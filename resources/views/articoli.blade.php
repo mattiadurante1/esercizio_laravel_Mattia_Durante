@@ -20,9 +20,9 @@
   <h5 class="text-white">{{ $description }}</h5>
 
   <ul>
-    @foreach($articles as $article)
+    @foreach($articles as $index => $article)
       @if($article['visibile'])
-        <a href=""><li class="">{{ $article['titolo']}}</li></a>
+        <a href="{{route('articolo',$index)}}"><li class="">{{ $article['titolo']}}</li></a>
         @endif
     @endforeach
 

@@ -15,5 +15,6 @@
         <a href="{{ route('news') }}">news</a>
         <a href="{{ route('chi-siamo')}}">chi siamo</a>
     </nav>
+    <h1>{{$articolo["titolo"]}}</h1>
 </body>
 </html>
