@@ -59,8 +59,8 @@ class PageController extends Controller
 
     }
     public function articolo($id){
-    $articolo = $this->articoli[$id];
-    return view();
+    $articolo = $this->articolo[$id];
+    return view("artocolo");
     }
 
     public function ChiSiamo(){
